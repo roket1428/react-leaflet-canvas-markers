@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { useMap } from 'react-leaflet';
-import { CanvasIconLayer, canvasIconLayer } from './leaflet-canvas-markers'; // Ensure you import the canvasIconLayer extension
+import { canvasIconLayer } from './leaflet-canvas-markers'; // Ensure you import the canvasIconLayer extension
 import isEqual from 'lodash';
 const CanvasMarkersLayer = ({ children = null, options = {}, onMarkerClick = () => { }, dataKey = 'position', }) => {
     const map = useMap();
